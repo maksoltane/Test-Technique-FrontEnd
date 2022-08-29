@@ -3,7 +3,8 @@
 Le projet a été généré avec [Angular CLI](https://angular.io/cli) version 14.0.5.
 
 ## Lancement de l'application
-- Installer [Angular CLI](https://angular.io/cli) 
+
+- Installer [Angular CLI](https://angular.io/cli)
 
 - Installer les packages npm `npm install`.
 
@@ -11,8 +12,8 @@ Le projet a été généré avec [Angular CLI](https://angular.io/cli) version 1
 
 - Accéder à l'application via à l'adresse `http://localhost:4200/`.
 
+### Liste de fonctionnalités disponibles
 
-### Liste de fonctionnalitées disponibles
 - Afficher la liste des produits en version desktop.
 - Afficher la liste liste des produits en version mobile.
 - Ajouter un produit au panier.
