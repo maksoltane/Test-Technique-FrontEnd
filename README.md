@@ -3,12 +3,18 @@
 Le projet a été généré avec [Angular CLI](https://angular.io/cli) version 14.0.5.
 
 ## Lancement de l'application
-- 1) Installer [Angular CLI](https://angular.io/cli) 
+- Installer [Angular CLI](https://angular.io/cli) 
 
-- 2) Installer les packages npm `npm install`.
+- Installer les packages npm `npm install`.
 
-- 3) Exécuter la commande `ng serve`.
+- Exécuter la commande `ng serve`.
 
-- 4) Accéder à l'application via à l'adresse `http://localhost:4200/`.
+- Accéder à l'application via à l'adresse `http://localhost:4200/`.
 
 
+### Liste de fonctionnalitées disponibles
+- Afficher la liste des produit version desktop
+- Afficher la liste liste des produit version mobile
+- Ajouer un produit au panier
+- Consulter le panier d'achats ()
+- Pas de perte des données du panier si rafraîchissement ou changement d'url.
