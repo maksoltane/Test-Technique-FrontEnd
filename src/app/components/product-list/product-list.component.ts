@@ -15,6 +15,7 @@ export class ProductListComponent implements OnInit {
   categoryList: Category[] = [];
   cartDetail = new CartDetail();
   unsubscribe$ = new Subject<void>();
+  selectedCategoryFilter!: Category;
   constructor(private cartService: CartService) {}
 
   ngOnInit() {
