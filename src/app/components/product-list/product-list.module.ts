@@ -8,6 +8,5 @@ import { FormsModule } from '@angular/forms';
   imports: [CommonModule, FormsModule],
   declarations: [ProductListComponent, MatchesCategoryPipe],
   exports: [ProductListComponent],
-  // providers: [MatchesCategoryPipe],
 })
 export class ProductListModule {}
