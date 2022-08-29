@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit {
   categoryList: Category[] = [];
   cartDetail = new CartDetail();
   unsubscribe$ = new Subject<void>();
-  selectedCategoryFilter!: Category;
+  selectedCategoryFilter: string = '';
   constructor(private cartService: CartService) {}
 
   ngOnInit() {
@@ -36,7 +36,6 @@ export class ProductListComponent implements OnInit {
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((data) => {
         this.productsList = data;
-        console.log('data', data);
       });
   }
 
