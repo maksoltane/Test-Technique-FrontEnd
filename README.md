@@ -18,4 +18,5 @@ Le projet a été généré avec [Angular CLI](https://angular.io/cli) version 1
 - Ajouter un produit au panier.
 - Consulter le panier d'achats.
 - Pas de perte des données du panier en cours si rafraîchissement ou changement d'url.
+- Filtrer la liste des produits selon la catégorie
 - Rechercher un produit (En cours).
