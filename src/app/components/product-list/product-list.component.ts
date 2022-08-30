@@ -26,10 +26,22 @@ export class ProductListComponent implements OnInit {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
+
+  /**
+   * Permet d'ajouter un produit dansle panier
+   *
+   * @param {Product} product
+   * @memberof ProductListComponent
+   */
   addProductToCart(product: Product) {
     this.cartService.cartDetailUpdate.next(product);
   }
 
+  /**
+   * Permet de récupérer la liste des produits
+   *
+   * @memberof ProductListComponent
+   */
   retreiveListProduct(): void {
     this.cartService
       .getListProduct()
@@ -39,6 +51,11 @@ export class ProductListComponent implements OnInit {
       });
   }
 
+  /**
+   * Permet de récuprérer la liste des catégories
+   * 
+   * @memberof ProductListComponent
+   */
   retreiveListCategory(): void {
     this.cartService
       .getListCategory()

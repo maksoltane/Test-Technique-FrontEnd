@@ -21,6 +21,12 @@ export class HeaderComponent implements OnInit {
     this.watcheCartAddProduct();
   }
 
+  /**
+   * Permet d'ajouter un élement dans le panier (header), 
+   * de mettre à jour la localstorage 
+   *
+   * @memberof HeaderComponent
+   */
   watcheCartAddProduct(): void {
     this.cartService.cartDetailUpdate
       .pipe(takeUntil(this.unsubscribe$))
@@ -30,6 +36,12 @@ export class HeaderComponent implements OnInit {
         localStorage.setItem('cart_details', JSON.stringify(this.cartDetail));
       });
   }
+
+  /**
+   *
+   * permetd e calculer le total du panier
+   * @memberof HeaderComponent
+   */
   totalCartAmount() {
     this.cartDetail.total = 0;
     this.cartDetail.products.forEach((product) => {
